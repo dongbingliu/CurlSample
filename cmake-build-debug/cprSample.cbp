@@ -4,142 +4,136 @@
 	<Project>
 		<Option title="cprSample"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="msvc8"/>
+		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="H:/Work/ClionProject/cprSample/cmake-build-debug"/>
+				<Option working_dir="/Users/dongbingliu/Github/CurlSample/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="cprSample">
-				<Option output="H:/Work/ClionProject/cprSample/cmake-build-debug/cprSample.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="H:/Work/ClionProject/cprSample/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="msvc8"/>
-				<Compiler>
-					<Add option="-DCURL_STATICLIB"/>
-					<Add directory="H:/Work/ClionProject/cprSample/include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 cprSample"/>
-					<CompileFile command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="cprSample/fast">
-				<Option output="H:/Work/ClionProject/cprSample/cmake-build-debug/cprSample.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="H:/Work/ClionProject/cprSample/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="msvc8"/>
-				<Compiler>
-					<Add option="-DCURL_STATICLIB"/>
-					<Add directory="H:/Work/ClionProject/cprSample/include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 cprSample/fast"/>
-					<CompileFile command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="H:/Work/ClionProject/cprSample/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
-					<CompileFile command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="H:/Work/ClionProject/cprSample/cmake-build-debug"/>
+				<Option working_dir="/Users/dongbingliu/Github/CurlSample/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f H:\Work\ClionProject\cprSample\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/dongbingliu/Github/CurlSample/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cprSample">
+				<Option output="/Users/dongbingliu/Github/CurlSample/cmake-build-debug/cprSample" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dongbingliu/Github/CurlSample/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/dongbingliu/Github/CurlSample/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 cprSample"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cprSample/fast">
+				<Option output="/Users/dongbingliu/Github/CurlSample/cmake-build-debug/cprSample" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dongbingliu/Github/CurlSample/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/dongbingliu/Github/CurlSample/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 cprSample/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/dongbingliu/Github/CurlSample/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="H:/Work/ClionProject/cprSample/main.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/main.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/src/cpr/auth.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/src/cpr/auth.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/src/cpr/bearer.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/src/cpr/bearer.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/src/cpr/cookies.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/src/cpr/cookies.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/src/cpr/cprtypes.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/src/cpr/cprtypes.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/src/cpr/curl_container.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/src/cpr/curl_container.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/src/cpr/curlholder.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/src/cpr/curlholder.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/src/cpr/error.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/src/cpr/error.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/src/cpr/multipart.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/src/cpr/multipart.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/src/cpr/parameters.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/src/cpr/parameters.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/src/cpr/payload.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/src/cpr/payload.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/src/cpr/proxies.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/src/cpr/proxies.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/src/cpr/response.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/src/cpr/response.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/src/cpr/session.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/src/cpr/session.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/src/cpr/timeout.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/src/cpr/timeout.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/src/cpr/unix_socket.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/src/cpr/unix_socket.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/src/cpr/util.cpp">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/src/cpr/util.cpp">
 			<Option target="cprSample"/>
 		</Unit>
-		<Unit filename="H:/Work/ClionProject/cprSample/CMakeLists.txt">
+		<Unit filename="/Users/dongbingliu/Github/CurlSample/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -1,4 +1,5 @@
-"H:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" H:\Work\ClionProject\cprSample
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/dongbingliu/Github/CurlSample
+=== MAC SYSTEM ===
 -- Configuring done
 -- Generating done
--- Build files have been written to: H:/Work/ClionProject/cprSample/cmake-build-debug
+-- Build files have been written to: /Users/dongbingliu/Github/CurlSample/cmake-build-debug
