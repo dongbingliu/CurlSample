@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "H:/Work/ClionProject/cprSample/cmake-build-debug/CMakeFiles/cprSample.dir/embed.manifest"
